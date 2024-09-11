@@ -1,0 +1,122 @@
+.shop-category {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    color: #333;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.shopcatrgory-indexSort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.shopcatrgory-indexSort p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.shopcatogery-sort {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.shopcatogery-sort img {
+    width: 20px;
+    height: 20px;
+    margin-left: 0.5rem;
+}
+
+.shopcategory-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center; /* Center items horizontally */
+}
+
+.shopcategory-products .item {
+    flex: 1 1 calc(25% - 1rem);
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 0.5rem; /* Optional: Add margin around items */
+}
+
+.shopcategory-products .item:hover {
+    transform: scale(1.05);
+}
+
+.shopcategory-loadmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: #6A9C89;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .shopcategory-products .item {
+        flex: 1 1 calc(33.33% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-category {
+        padding: 1rem;
+    }
+
+    .shopcatrgory-indexSort {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .shopcatrgory-indexSort p {
+        font-size: 0.9rem;
+    }
+
+    .shopcatogery-sort {
+        font-size: 0.9rem;
+    }
+
+    .shopcategory-products .item {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .shopcatrgory-indexSort {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .shopcatrgory-indexSort p {
+        font-size: 0.8rem;
+    }
+
+    .shopcatogery-sort {
+        font-size: 0.8rem;
+    }
+
+    .shopcategory-products .item {
+        flex: 1 1 100%;
+    }
+}

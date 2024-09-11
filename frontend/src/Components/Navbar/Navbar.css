@@ -1,0 +1,210 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #E9EFEC;
+    border-bottom: 1px solid #C4DAD2;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Logo section */
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #16423C;
+}
+
+/* Navigation menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* Allow menu to grow and fill available space */
+    justify-content: center; /* Center the menu items */
+}
+
+/* Navigation menu items */
+.nav-menu li {
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer; /* Hand cursor on hover and click */
+}
+
+/* Menu item text */
+.nav-menu span {
+    text-decoration: none;
+    color: #16423C; /* Dark text color */
+    font-weight: 500;
+    display: block;
+    font-size: 1rem; /* Default font size */
+}
+
+/* Active and hover style */
+.nav-menu li.underline {
+    color: #6A9C89; /* Color for the underline effect */
+}
+
+.nav-menu li.underline.active {
+    color: #16423C; /* Dark color when active */
+}
+
+.nav-menu li.underline:hover {
+    color: #C4DAD2; /* Lighter color on hover */
+    transform: translateY(-3px); /* Lift up effect */
+}
+
+.nav-menu li.underline::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #6A9C89;
+    transition: width 0.3s ease;
+}
+
+/* Show underline when active */
+.nav-menu li.underline.active::after {
+    width: 100%;
+}
+
+/* Cart and Login button */
+.nav-cart {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-cart-icon-container {
+    position: relative;
+}
+
+.nav-cart-icon {
+    height: 30px;
+}
+
+.nav-cart-count {
+    width: 22px;
+    height: 22px;
+    background-color: red;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Login button */
+.login-button {
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #C4DAD2,
+                -6px -6px 12px #E9EFEC;
+    width: 8em;
+    height: 2.8em;
+    background-color: #6A9C89;
+    color: #E9EFEC;
+    margin-left: 1rem;
+}
+
+/* Button hover effect */
+.login-button::before {
+    content: '';
+    width: 0;
+    height: 2.8em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #6A9C89 0%, #16423C 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.login-button:hover::before {
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        gap: 0.5rem;
+    }
+
+    .nav-menu li {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .nav-cart {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .login-button {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .logo-image {
+        height: 30px;
+    }
+
+    .nav-menu {
+        font-size: 0.9rem;
+    }
+
+    .nav-cart-icon {
+        height: 25px;
+    }
+
+    .login-button {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,18 @@
+.popular {
+  padding: 2rem;
+  text-align: center;
+  background-color: #E9EFEC;
+}
+
+.popular h1 {
+  font-size: 2.5rem;
+  color: #16423C;
+  margin-bottom: 1rem;
+}
+
+.popular-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}

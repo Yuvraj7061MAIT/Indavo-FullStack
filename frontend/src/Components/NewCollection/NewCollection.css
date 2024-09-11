@@ -1,0 +1,95 @@
+.new-collection {
+    padding: 4rem 5%;
+    background-color: #E9EFEC; /* Light background */
+    color: #16423C; /* Dark text color for contrast */
+    text-align: center; /* Center-align text */
+  }
+  
+  .new-collection h1 {
+    font-size: 3rem; /* Large font size for the heading */
+    font-weight: 700; /* Bold font for emphasis */
+    color: #16423C; /* Dark green color */
+    margin-bottom: 1rem; /* Spacing below the heading */
+    text-transform: uppercase; /* Capitalize all letters */
+    letter-spacing: 2px; /* Spacing between letters */
+  }
+  
+  .new-collection hr {
+    border: 0;
+    height: 2px;
+    background: #6A9C89; /* Light green line for separation */
+    width: 50%;
+    margin: 1rem auto; /* Center and space out the line */
+  }
+  
+  .collections {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    gap: 2rem; /* Space between items */
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  .items {
+    background-color: #FFFFFF; /* White background for items */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure content does not overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    width: 250px; /* Fixed width for items */
+    text-align: center; /* Center-align text inside items */
+    padding: 1rem; /* Padding around content */
+  }
+  
+  .items:hover {
+    transform: translateY(-5px); /* Lift items on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  .items img {
+    width: 100%; /* Full width of item container */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 2px solid #C4DAD2; /* Light green border below the image */
+    margin-bottom: 1rem; /* Space between image and text */
+  }
+  
+  .items p {
+    font-size: 1.2rem; /* Slightly larger font for item name */
+    color: #16423C; /* Dark green color for text */
+    margin-bottom: 0.5rem; /* Space between item name and prices */
+  }
+  
+  .item-prices {
+    display: flex;
+    justify-content: center; /* Center prices horizontally */
+    gap: 1rem; /* Space between new and old prices */
+  }
+  
+  .item-price-new {
+    font-size: 1.2rem; /* Font size for new price */
+    color: #6A9C89; /* Light green color for new price */
+    font-weight: 600; /* Bold text for emphasis */
+  }
+  
+  /* .dkfn k;ajdn;an;an;nanfvnarjnga;ka;d; ;aknds;asjnda;srfdvdcxasfsedmfaewnfjkanejfnaksdfalsmd f asdssa as     */
+  .item-price-old {
+    font-size: 1rem; /* Slightly smaller font size for old price */
+    color: #C4DAD2; /* Light grayish-green for old price */
+    text-decoration: line-through; /* Strikethrough to indicate old price */
+  }
+  
+  @media (max-width: 768px) {
+    .new-collection {
+      padding: 2rem 3%; /* Adjust padding for smaller screens */
+    }
+  
+    .collections {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .items {
+      width: 90%; /* Adjust width for smaller screens */
+      margin-bottom: 2rem; /* Space between items */
+    }
+  }
+  

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  }
+  
+  .items {
+    background-color: #E9EFEC; /* Light background color */
+    border: 2px solid #16423C !important;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 24px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 1.5rem;
+    max-width: 300px; /* Maximum width for the item card */
+    text-align: center;
+    margin: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .items:hover {
+    transform: translateY(-5px); /* Lift up on hover */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .items img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-bottom: 1rem;
+  }
+  
+  .items p {
+    font-size: 1.5rem;
+    color: #16423C; /* Darker text color */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .item-prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .item-price-new {
+    font-size: 1.4rem;
+    color: #6A9C89; /* New price color */
+    font-weight: 700;
+  }
+  
+  .item-price-old {
+    font-size: 1.2rem;
+    color: #C4DAD2; /* Old price color */
+    text-decoration: line-through; /* Strikethrough for old price */
+  }
+  
+  @media (max-width: 768px) {
+    .items {
+      max-width: 90%;
+      padding: 1rem;
+    }
+  
+    .items p {
+      font-size: 1.2rem;
+    }
+  
+    .item-price-new, .item-price-old {
+      font-size: 1rem;
+    }
+  }
+  

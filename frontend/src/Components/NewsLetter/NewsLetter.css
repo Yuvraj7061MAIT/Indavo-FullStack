@@ -1,0 +1,72 @@
+.news-letter {
+    background: linear-gradient(to bottom, #16423C, #6A9C89); /* Fading color effect */
+    color: #E9EFEC; /* Light text color */
+    text-align: center; /* Center-align text */
+    border: 2px solid  #6A9C89;
+    padding: 4rem 5%; /* Generous padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .news-letter h1 {
+    font-size: 2.5rem; /* Large font size for heading */
+    font-weight: 700; /* Bold text for emphasis */
+    margin-bottom: 1rem; /* Space below the heading */
+    text-transform: uppercase; /* Capitalize text */
+    color: #E9EFEC; /* Light text color */
+  }
+  
+  .news-letter p {
+    font-size: 1.2rem; /* Slightly larger font size for the paragraph */
+    margin-bottom: 2rem; /* Space below the paragraph */
+    color: #C4DAD2; /* Light grayish-green color */
+  }
+  
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Space between input and button */
+  }
+  
+  .news-letter input[type='email'] {
+    width: 60%; /* Adjust width to fit nicely within the container */
+    padding: 0.8rem 1rem; /* Padding inside the input */
+    font-size: 1rem; /* Font size for input text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 1rem; /* Space below the input */
+    color: #16423C; /* Dark text color */
+    background-color: #E9EFEC; /* Light background color for input */
+  }
+  
+  .news-letter button {
+    background-color: #6A9C89; /* Light green background for button */
+    color: #E9EFEC; /* Light text color */
+    border: none; /* Remove default border */
+    padding: 0.8rem 2rem; /* Padding inside the button */
+    font-size: 1rem; /* Font size for button text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+  .news-letter button:hover {
+    background-color: #16423C; /* Dark green background on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .news-letter {
+      padding: 2rem 3%; /* Adjust padding for smaller screens */
+    }
+  
+    .news-letter input[type='email'] {
+      width: 80%; /* Wider input for smaller screens */
+    }
+  
+    .news-letter button {
+      width: 100%; /* Full width button for smaller screens */
+      padding: 1rem; /* Adjust padding for smaller screens */
+    }
+  }
+  

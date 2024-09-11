@@ -1,0 +1,86 @@
+.offers {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center;
+    padding: 4rem 5%;
+    width: 100%;
+    height: 900px;
+    margin: 0 auto; /* Ensure it stays centered */
+    background: linear-gradient(to bottom, #16423C, #E9EFEC); /* Gradient from dark green to light */
+    position: relative; /* For more control over child elements */
+    text-align: center; /* Center the text horizontally */
+  }
+  
+  .offers-left {
+    position: absolute; /* Position text on top of the image */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center text in the middle of the container */
+    color: #E9EFEC; /* Light color for text contrast */
+    z-index: 1; /* Ensure text is above the background gradient */
+  }
+  
+  .offers-left h1 {
+    font-size: 5.5rem; /* Adjusted size for a more balanced look */
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .offers-left p {
+    font-size: 1rem; /* Adjusted size for a more balanced look */
+    color: #C4DAD2; /* Slightly lighter green for text contrast */
+    margin: 1rem 0;
+  }
+  
+  .offers-left button {
+    background-color: #6A9C89; /* Lighter green button background */
+    color: #16423C; /* Dark text color for contrast */
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem; /* Adjusted font size for balance */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .offers-left button:hover {
+    background-color: #16423C; /* Darker green on hover */
+    color: #E9EFEC; /* Light text color on hover */
+    transform: translateY(-3px);
+  }
+  
+  .offers-right {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center;
+  }
+  
+  .offers-right img {
+    margin-top: 50px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px; /* Control the maximum height of the image */
+    object-fit: contain; /* Ensure image maintains aspect ratio and fits within the container */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .offers {
+      padding: 2rem;
+    }
+  
+    .offers-left {
+      font-size: 1rem; /* Adjust text size for smaller screens */
+      top: 40%;
+    }
+  
+    .offers-right img {
+      max-height: 300px; /* Further reduce max height for smaller screens */
+    }
+  }
+  
