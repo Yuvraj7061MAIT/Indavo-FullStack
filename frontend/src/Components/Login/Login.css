@@ -1,107 +1,91 @@
+/* General styles for the login page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Light background for contrast */
+}
 
-  /* Form container styles */
-  .form-box {
-    max-width: 600px; /* Increased width for a larger form */
-    width: 90%; /* Ensure it scales well on different screen sizes */
-    height: 700px; /* Increased height for more space */
-    background: rgba(255, 255, 255, 0.2); /* Slightly more transparent background */
-    backdrop-filter: blur(15px); /* Increased blur for a stronger glass effect */
-    border-radius: 24px; /* Smoother rounded corners */
-    color: #010101;
-    border: 2px solid   #6A9C89; /* Slightly thicker border for better glass effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 
-                0 0 20px rgba(255, 255, 255, 0.5); /* Glowing effect */
-    position: relative;
-    overflow: hidden;
-  }
-  
-  /* Form content styles */
-  .form {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 40px 40px; /* Increased padding for a spacious feel */
-    gap: 20px; /* Increased gap for more breathing space */
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8); /* Slightly more opaque background for form content */
-    border-radius: 24px; /* Rounded corners for the form content */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Inner glow effect */
-  }
-  
-  /* Form text styles */
-  .title {
-    font-weight: bold;
-    font-size: 2rem; /* Larger font size for better visibility */
-    color: #16423C; /* Title color from your theme */
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing text effect */
-  }
-  
-  .subtitle {
-    font-size: 1.4rem; /* Larger font size for subtitle */
-    color: #6A9C89; /* Subtitle color from your theme */
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6); /* Glowing text effect */
-  }
-  
-  /* Input box styles */
-  .form-container {
-    overflow: hidden;
-    border-radius: 12px; /* More rounded corners for the input container */
-    background-color: #fff;
-    margin: 1.5rem 0 .5rem;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle glow around input box */
-  }
-  
-  .input {
-    background: none;
-    border: 0;
-    outline: 0;
-    height: 55px; /* Increased input height for a more substantial look */
-    width: 100%;
-    border-bottom: 1px solid #C4DAD2; /* Light border for inputs */
-    font-size: 1.1rem; /* Increased font size for readability */
-    padding: 12px 15px; /* Increased padding for more comfort */
-  }
-  
-  /* Form section styles */
-  .form-section {
-    padding: 20px; /* Increased padding for a more spacious footer */
-    font-size: 1.1rem; /* Larger font size for better readability */
-    background-color: #6A9C89; /* Background color from your theme */
-    box-shadow: rgb(0 0 0 / 8%) 0 -1px;
-    color: #fff; /* Text color */
-    border-radius: 0 0 24px 24px; /* Rounded bottom corners */
-  }
-  
-  /* Form section link styles */
-  .form-section a {
-    font-weight: bold;
-    color: #E9EFEC; /* Link color from your theme */
-    transition: color .3s ease;
-  }
-  
-  .form-section a:hover {
-    color: #C4DAD2; /* Hover color for links */
-    text-decoration: underline;
-  }
-  
-  /* Button styles */
-  .form button {
-    background-color: #16423C; /* Button background color */
-    color: #fff;
-    border: 0;
-    border-radius: 30px; /* More rounded corners for the button */
-    padding: 12px 24px; /* Increased padding for a larger button */
-    font-size: 1.2rem; /* Larger font size for better visibility */
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color .3s ease, box-shadow .3s ease;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); /* Glowing effect on button */
-  }
-  
-  .form button:hover {
-    background-color: #0D2B28; /* Darker shade for button hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 
-                0 0 25px rgba(255, 255, 255, 0.5); /* Glowing effect on hover */
-  }
-  
+/* Container for centering the form */
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #fff; /* White background for the form box */
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px; /* Adjust width as needed */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #fff; /* White background for the form */
+}
+
+/* Title and subtitle styling */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Darker text color for contrast */
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #777; /* Lighter text color for subtitle */
+  margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Light border for input fields */
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.input:focus {
+  border-color: #6A9C89; /* Highlight border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6A9C89; /* Primary button color */
+  color: #fff; /* White text color */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6A9C89; /* Darker shade on hover */
+}
+
+/* Form section for links */
+.form-section {
+  margin-top: 15px;
+}
+
+.form-section p {
+  font-size: 14px;
+  color: #555; /* Slightly darker text color for the link section */
+}
+
+.form-section a {
+  color: #6A9C89; /* Link color matching the button */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.form-section a:hover {
+  text-decoration: underline; /* Underline on hover for better UX */
+}

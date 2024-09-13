@@ -23,14 +23,12 @@ function App() {
         <Route path="/mens" element={<ShopCatogery banner={man} category="men" />} />
         <Route path="/womens" element={<ShopCatogery banner={woman} category="women" />} />
         <Route path="/kids" element={<ShopCatogery banner={kid} category="kid" />} />
-        <Route path="/product" element={<Product />}>
-          <Route path=":productID" element={<Product />} />
-        </Route>
+        <Route path="/product/:productID" element={<Product />} /> {/* Corrected route for product */}
         <Route path="/cart" element={<Cart />} />
-        <Route path="/login" element={<Login />} /> {/* Login page route */}
-        <Route path="/sign-in" element={<SignIn />} /> {/* Sign In page route */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/sign-in" element={<SignIn />} />
       </Routes>
-      <NewsLetter/>
+      <NewsLetter />
     </BrowserRouter>
   );
 }

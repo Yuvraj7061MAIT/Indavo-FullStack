@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
 import './Breadcrum.css'
-import arrow_icon from '../../assets/Assets/Frontend_Assets/breadcrum_arrow.png'
+import arrow_icon from '../../assets/Assets/Frontend_Assets/breadcrum_arrow.png';
 
-const Breadcrum = () => {
-    const {product} = props;
+const Breadcrumb = ({ product }) => {
+  if (!product) return null; // Handle case where product is undefined
+
   return (
-    <div className='breadcrum'>
-        HOME <img src={arrow_icon} alt="" /> SHOP <img src={arrow_icon} alt="" />{product.category}
-        <img src={arrow_icon} alt="" />{product.name}
+    <div className='breadcrumb'>
+      HOME <img src={arrow_icon} alt="arrow" /> SHOP <img src={arrow_icon} alt="arrow" /> {product.category}
+      <img src={arrow_icon} alt="arrow" /> {product.name}
     </div>
-  )
-}
+  );
+};
 
-export default Breadcrum
+export default Breadcrumb;

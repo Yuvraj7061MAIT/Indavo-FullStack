@@ -1,0 +1,41 @@
+/* DescriptionBox.css */
+
+.descriptionBox {
+    background-color: #E9EFEC; /* Light background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .descriptionBox-navigator {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #C4DAD2; /* Light border color */
+  }
+  
+  .descriptionBox-nav-box {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #16423C; /* Dark green text color */
+    border-bottom: 2px solid transparent;
+  }
+  
+  .descriptionBox-nav-box:hover {
+    border-bottom: 2px solid #6A9C89; /* Medium green for hover state */
+  }
+  
+  .descriptionBox-nav-box.fade {
+    color: #6A9C89; /* Medium green for inactive tabs */
+  }
+  
+  .descriptionBox-description {
+    font-size: 16px;
+    color: #16423C; /* Dark green text color */
+    line-height: 1.6;
+  }
+  
+  .descriptionBox-description p {
+    margin-bottom: 15px;
+  }
+  

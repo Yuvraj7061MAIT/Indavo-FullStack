@@ -2,18 +2,20 @@ import React from 'react';
 import './items.css';
 import { Link } from 'react-router-dom';
 
-const Items = (props) => {
+const Items = ({ id, image, name, new_price, old_price }) => { // Destructure props directly
   return (
     <div className='items'>
-      <Link to={`/product/${props.id}`}> <img src={props.image} alt={props.name} /> </Link>
-      <p>{props.name}</p>
+      <Link to={`/product/${id}`}> {/* Ensure the correct ID is passed */}
+        <img  onClick={window.scrollTo(0,0)} src={image} alt={name || 'Product Image'} />
+      </Link>
+      <p>{name}</p>
       <div className="item-prices">
         <div className="item-price-new">
-            ${props.new_price.toFixed(2)}
+          ${typeof new_price === 'number' ? new_price.toFixed(2) : new_price}
         </div>
-        {props.old_price && (
+        {old_price && (
           <div className="item-price-old">
-              ${props.old_price.toFixed(2)}
+            ${typeof old_price === 'number' ? old_price.toFixed(2) : old_price}
           </div>
         )}
       </div>
