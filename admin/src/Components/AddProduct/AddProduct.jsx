@@ -54,6 +54,9 @@ const AddProduct = () => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(product),
+        }).then((resp) => resp.json()).then((data) => {
+          console.log('Product added:', data);
+          data.success?alert('Product added successfully!'):alert("Failed")
         })
       } else {
         console.error('Error uploading image:', response_data.message);
