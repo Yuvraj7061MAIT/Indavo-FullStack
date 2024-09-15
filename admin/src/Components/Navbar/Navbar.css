@@ -1,0 +1,50 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #16423C;/* Background color of the navbar */
+  position: relative; /* Allows absolute positioning for mobile menu */
+  box-shadow: #16423C inset 0px 1px 1px  #6A9C89;
+  border: 2px solid #6A9C89;
+}
+
+.nav-logo {
+  height: 40px; /* Adjust based on your logo size */
+  width: auto;
+}
+
+.nav-profile {
+  height: 30px; /* Adjust based on your profile icon size */
+  width: auto;
+  border-radius: 50%; /* Optional: makes the profile icon circular */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .nav-logo {
+    margin-bottom: 10px; /* Adds space below the logo */
+  }
+
+  .nav-profile {
+    margin-top: 10px; /* Adds space above the profile icon */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .nav-logo {
+    height: 30px; /* Reduce logo size */
+  }
+
+  .nav-profile {
+    height: 25px; /* Reduce profile icon size */
+  }
+}

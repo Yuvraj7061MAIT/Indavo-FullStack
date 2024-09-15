@@ -1,0 +1,37 @@
+/* Admin container styling */
+.Admin {
+  display: flex;
+  background-color: #f4f4f4; /* Light background for the admin page content */
+  min-height: 94vh; /* Full height of the page */
+}
+
+/* Content area styling */
+.Admin .content {
+  flex-grow: 1;
+  padding: 20px; /* Padding inside the main content area */
+  background-color: #ffffff; /* White background for the content area */
+  margin-left: 250px; /* Margin to accommodate for the sidebar width */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Admin {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%; /* Sidebar takes full width in mobile view */
+    height: auto; /* Allow sidebar to expand as needed */
+  }
+
+  .Admin .content {
+    margin-left: 0; /* Remove margin on mobile view */
+  }
+}
+
+@media (max-width: 480px) {
+  .Admin .content {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}

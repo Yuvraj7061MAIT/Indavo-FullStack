@@ -1,0 +1,73 @@
+/* Sidebar styling */
+.sidebar {
+  background-color: #C4DAD2; /* Dark green theme for the sidebar */
+  width: 250px; /* Fixed sidebar width */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  color: white;
+  position: fixed; /* Fixed sidebar on the left */
+  height: 100vh; /* Full height of the sidebar */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  z-index: 1000; /* Ensure sidebar is on top of other content */
+  border-top-right-radius: 25px; /* Rounded top-right corners */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 63px;
+}
+
+/* Sidebar item styling */
+.sidebar-add-product {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  margin-bottom: 10px; /* Spacing between items */
+  border-radius: 5px;
+  background-color: #16423C; /* Add background color */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+  color: white; /* Text color */
+}
+
+.sidebar-add-product:hover {
+  background-color: #6A9C89; /* Lighter shade of the original color for hover effect */
+  color: #16423C;
+}
+
+.sidebar-add-product img {
+  height: 24px; /* Icon size */
+  width: 24px;
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.sidebar-add-product span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Reduce width on smaller screens */
+  }
+
+  .sidebar-add-product span {
+    font-size: 14px; /* Smaller text size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 150px; /* Further reduce sidebar width */
+    padding: 10px;
+  }
+
+  .sidebar-add-product img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .sidebar-add-product span {
+    font-size: 12px;
+  }
+}
